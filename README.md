@@ -6,6 +6,7 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Ollama](https://img.shields.io/badge/Ollama-FF6B35?style=for-the-badge)
 [![GitHub](https://img.shields.io/badge/GitHub-@derotti77-181717?style=for-the-badge&logo=github)](https://github.com/derotti77)
+[![TikTok](https://img.shields.io/badge/TikTok-@derotti77-FF0050?style=for-the-badge&logo=tiktok&logoColor=white)](https://tiktok.com/@derotti77)
 
 ## 🌐 Supported Languages
 
