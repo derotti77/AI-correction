@@ -1,0 +1,105 @@
+name: 🐛 Bug Report
+description: Report a bug to help us improve AI Text Corrector
+title: "[BUG] "
+labels: ["🐛 bug"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! 🐛
+        Please fill out this form to help us understand and fix the issue.
+
+  - type: checkboxes
+    id: version
+    attributes:
+      label: Version
+      description: Which version are you using?
+      options:
+        - label: GUI Application (ai-corrector.py)
+        - label: Raycast Integration (raycast-ai-corrector.py)
+        - label: Command Line Version
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      description: Which OS are you running?
+      options:
+        - macOS 12 (Monterey)
+        - macOS 13 (Ventura)
+        - macOS 14 (Sonoma)
+        - macOS 15 (Sequoia)
+        - Other (please specify in description)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Target Language
+      description: Which language were you trying to correct?
+      options:
+        - English
+        - German
+        - Spanish
+        - French
+        - Italian
+        - Portuguese
+        - Dutch
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug in detail
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      description: What should have happened instead?
+      placeholder: Tell us what you expected!
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Copy text "example with erors"
+        2. Run corrector...
+        3. See error...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error Messages/Logs
+      description: Please paste any error messages or logs
+      render: shell
+
+  - type: checkboxes
+    id: ollama
+    attributes:
+      label: Ollama Status
+      description: Please check your Ollama setup
+      options:
+        - label: Ollama is installed and running (ollama serve)
+        - label: Mistral model is downloaded (ollama list shows mistral)
+        - label: API is responding (curl http://localhost:11434/api/version works)
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Anything else that might help us solve the issue
